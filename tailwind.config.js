@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       keyframes: {
         shimmer: {
-          '100%': { transform: 'trasnlateX(100%)' }
+          '100%': { transform: 'translateX(100%)' }
         }
       },
       animation: {
