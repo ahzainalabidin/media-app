@@ -1,8 +1,15 @@
+import { GoTrash } from "react-icons/go";
+import Button from "./Button";
 import ExpandablePanel from "./ExpandablePanel";
 
 function AlbumsListItem({ album }) {
 
-    const header = <div>{album.title}</div>;
+    const header = <div>
+        <Button>
+            <GoTrash />
+        </Button>
+        {album.title}
+    </div>;
 
     return (
         <ExpandablePanel key={album.id} header={header}>
