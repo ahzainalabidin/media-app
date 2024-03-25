@@ -37,6 +37,14 @@ const albumsApi = createApi({
                     };
                 },
             }),
+            removeAlbum: builder.mutation({
+                query: (album) => {
+                    return {
+                        url: `/albums/${album.id}`,
+                        method: 'DELETE',
+                    };
+                },
+            }),
         };
     },
 });
@@ -44,6 +52,7 @@ const albumsApi = createApi({
 export const {
     useFetchAlbumsQuery,
     useAddAlbumMutation,
+    useRemoveAlbumMutation
 } = albumsApi;
 
 export { albumsApi };
