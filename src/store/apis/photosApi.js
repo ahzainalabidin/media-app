@@ -36,7 +36,7 @@ const photosApi = createApi({
                         method: 'POST',
                         body: {
                             albumId: album.id,
-                            url: faker.image.abstract(150, 150, true)
+                            url: faker.image.url(150, 150, true)
                         }
                     };
                 },

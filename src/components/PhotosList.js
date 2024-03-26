@@ -1,7 +1,7 @@
 import PhotosListItem from "./PhotosListItem";
 import Button from "./Button";
 import Skeleton from "./Skeleton";
-import { useAddPhotoMutation, useFetchPhotosQuery } from "../store/apis/photosApi";
+import { useAddPhotoMutation, useFetchPhotosQuery } from "../store";
 
 function PhotosList({ album }) {
 
